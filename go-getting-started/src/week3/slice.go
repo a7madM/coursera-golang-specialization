@@ -8,7 +8,7 @@ import (
 
 func main() {
 
-	slice := make([]int, 3)
+	slice := make([]int, 0, 3)
 	fmt.Println("Type X to Quite")
 	for {
 		var input string
