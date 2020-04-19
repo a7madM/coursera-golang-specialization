@@ -37,6 +37,6 @@ func main() {
 	}
 
 	for _, name := range names {
-		fmt.Println(name.fname, name.lname)
+		fmt.Printf("Firstname: %s, Lastname: %s \n", name.fname, name.lname)
 	}
 }
