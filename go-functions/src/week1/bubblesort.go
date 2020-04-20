@@ -36,8 +36,15 @@ func BubbleSort(numbers []int) {
 	for i := length; i > 0; i-- {
 		for x := 0; x < length; x++ {
 			if numbers[x] > numbers[x+1] {
-				numbers[x], numbers[x+1] = numbers[x+1], numbers[x]
+				Swap(x, numbers)
 			}
 		}
 	}
+}
+
+// Swap Function to Swap number in index i with number in index i+1
+func Swap(i int, sli []int) {
+	temp := sli[i]
+	sli[i] = sli[i+1]
+	sli[i+1] = temp
 }
